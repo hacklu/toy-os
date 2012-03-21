@@ -15,7 +15,8 @@ bootsect_start:
 
 	# Normalize the start address
 	#ljmp	$0x0, $start2
-	jmp	 start2
+#	jmp	 start2
+	ljmp	$0x7c0,$start2
 #.byte 0x33
 #.byte 0x44
 

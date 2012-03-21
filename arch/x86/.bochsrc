@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+megs :32
+
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
+
+
+floppya: 1_44=a.img, status=inserted
+boot: floppy
+
+log:bochs.log
+
+mouse: enabled=0
+
+keyboard_mapping:enabled=1,map=/usr/local/share/bochs/keymaps/x11-pc-us.map

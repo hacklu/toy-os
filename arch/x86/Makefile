@@ -4,6 +4,7 @@ all:
 	# -Wl,-Ttext,0x7C00 
 	# -Wl,-Ttext,0x7C00 #-Wl,-N means not paged,not make text read-only
 	objcopy -O binary --strip-unneeded b.exec b.img
+	dd if=b.img of=a.img bs=512 count=1 conv=notrunc
 .PHONY:all
 
 clean:
